@@ -17,7 +17,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
     font-family: sans-serif;
     letter-spacing: 1px;
     font-weight: 300;
@@ -27,13 +27,15 @@ body{
     overflow-x: hidden;
 }
 nav{
-    height: 6rem;
+    height: 5rem;
     width: 100vw;
     background-color: #1F1D2B;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Styling logo*/
@@ -50,21 +52,21 @@ nav{
 .nav-links{
     display: flex;
     list-style: none; 
-    width: 88vw;
-    padding: 0 0.7vw;
+    margin-right: 45px;
+    padding: 0 1.5vw;
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
 }
 .nav-links li a{
     text-decoration: none;
-    margin: 0 0.7vw;
-    font-family: "Poppins";
+    margin: 0 1.5vw;
+    font-family: sans-serif;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    color: #BCBCBC;
+    font-size: 15px;
+    color: #e4dede;
 }
 .nav-links li a:hover {
     color: #61DAFB;
@@ -80,7 +82,7 @@ nav{
     background-color: #61DAFB;
     position: absolute;
     transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
+    margin: -5px 0 0 10%;
 }
 .nav-links li a:hover::before{
     width: 80%;
@@ -106,8 +108,6 @@ nav{
   position: absolute;
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
-  
-
 }
 
 
@@ -247,10 +247,9 @@ h3 {
   margin: 0;
 }
 
-p {
+.p_description {
   line-height: 1.5;
   font-size: 20px;
-  margin: 0;
 }
 
 label {
@@ -261,8 +260,17 @@ label {
   margin-bottom: 6px;
 }
 
-.card {
+.content{
+  width: 100vw;
   display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 80%;
+  gap: 25px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
   border-radius: 4px;
   border: 1px solid silver;
@@ -270,18 +278,21 @@ label {
  
   img:hover {
       filter: brightness(0.5);
-
   }
   .card img{
-    width: 400PX;
-    height: 400PX;
+    width:  500PX;
+    height: 500PX;
   }
  
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 720px) {
   .card {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .p_description{
+    margin-left: 15px;
   }
 }
 .card img {
@@ -291,8 +302,7 @@ label {
   vertical-align: text-bottom;
 }
 .card-thumb {
-  margin: 10px;
-  background: rgba(0, 255, 255, 0.1);
+  margin: auto 10px;
 }
 @media screen and (max-width: 540px) {
   .card-thumb {
@@ -309,6 +319,19 @@ label {
 }
 .card-info a{
   text-decoration: none;
+}
+.btnn{
+  background-color: #007BFF;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #131418;
+}
+.btnn:hover{
+  color: #FFFFFF;
+  background-color: #000000;
 }
 @media screen and (max-width: 540px) {
   .card-info {
@@ -446,14 +469,16 @@ label {
   cursor: pointer;
 }
 .footer {
-
+  width: 100vw;
 margin-top: 300px;
 display: flex;
 align-items: center;
 background-color: #000000;
 justify-content: space-between;
+padding: 25px;
 }
 .landingpage .footer2 {
+  width: 100vw;
 display: flex;
 justify-content: space-between;
 padding-bottom: 30px;
@@ -503,6 +528,7 @@ display: flex;
   font-size: 12px;
   line-height: 36px;
   color: #828282;
+  padding: 0 25px;
 }
 
 .footer2 p {
