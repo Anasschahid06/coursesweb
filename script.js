@@ -25,7 +25,7 @@
           // Redirect to the corresponding HTML file based on the selected category
           switch (select.value) {
             case "web":
-              window.location.href = "#";
+              window.location.href = "page2__1.html";
               break;
             case "mobile":
               window.location.href = "#";
