@@ -144,4 +144,7 @@
           }
         }
       })();
-      
+      window.onbeforeunload = function () {
+        // The following line will refresh the page when the user is about to leave
+        location.reload(true);
+    };
