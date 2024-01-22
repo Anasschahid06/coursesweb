@@ -38,7 +38,7 @@ body{
   background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
 }
 nav{
-  height: 5rem;
+  height: 6rem;
   width: 100vw;
   background-color: #1F1D2B;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -55,8 +55,8 @@ nav{
   text-align: center;
 }
 .logo img {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 /*Styling Links*/
