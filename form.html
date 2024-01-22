@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example"><link rel="icon" type="image/png" href="wp.png">
-  
+    <meta name="description" content="contact form example">
   <title>Contact Form Example</title>
 </head>
 
@@ -25,7 +24,7 @@
    <link rel="stylesheet" href="form.css">
 
   <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbwMxYDrufp73bKdU8gMvxFDdHRuzcR4IKQUB33B7GqwyfyZS04/exec">
+  action="https://script.google.com/macros/s/AKfycbz5YRvV8iDMw11LHN8F0Jje_Vqd4bdPhyUj4V0LLPxfENNNRVKhGpz5gYi4uYHWyp4Lwg/exec">
     <!-- change the form action to your script url -->
 
     <div class="form-elements">
@@ -33,28 +32,29 @@
         <label for="name">Name: </label>
         <input id="name" name="name" placeholder="What your Mom calls you" />
       </fieldset>
-   <fieldset class="pure-group">
+<fieldset class="pure-group">
+        <label for="color">Number phone  </label>
+        <input id="color" name="color" />
+      </fieldset>
+      <fieldset class="pure-group">
         <label for="email"><em>Your</em> Email Address:</label>
         <input id="email" name="email" type="email" value=""
         required placeholder="your.name@email.com"/>
       </fieldset>
       <fieldset class="pure-group">
-        <label for="color">number phone </label>
-        <input id="color" name="color" 
-         />
-      </fieldset>
-      <fieldset class="pure-group">
         <label for="message">Message: </label>
         <textarea id="message" name="message" rows="10"
         placeholder="Tell us what's on your mind..."></textarea>
-      </fieldset> 
+      </fieldset>
+
       
 
-   
+      
 
-     
-
-    
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
 
       <button class="button-success pure-button button-xlarge">
         <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
@@ -69,7 +69,7 @@
   </form>
 
   <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="script.js"></script>
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
 <!-- END -->
 
 </body>
