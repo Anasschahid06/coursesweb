@@ -27,7 +27,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
   font-family: sans-serif;
   letter-spacing: 1px;
   font-weight: 300;
@@ -38,15 +38,13 @@ body{
   background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
 }
 nav{
-  height: 6rem;
+  height: 7rem;
   width: 100vw;
   background-color: #1F1D2B;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
   z-index: 10;
-  display: flex;
-  justify-content: space-between;
 }
 
 /*Styling logo*/
@@ -55,29 +53,29 @@ nav{
   text-align: center;
 }
 .logo img {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 /*Styling Links*/
 .nav-links{
   display: flex;
   list-style: none; 
-  margin-right: 45px;
-  padding: 0 4.5vw;
+  width: 88vw;
+  padding: 0 0.7vw;
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
 }
 .nav-links li a{
   text-decoration: none;
-  margin: 0 1.5vw;
-  font-family: sans-serif;
+  margin: 0 0.7vw;
+  font-family: "Poppins";
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  color: #e4dede;
+  font-size: 12px;
+  color: #BCBCBC;
 }
 .nav-links li a:hover {
   color: #61DAFB;
@@ -93,7 +91,7 @@ nav{
   background-color: #61DAFB;
   position: absolute;
   transition: all ease-in-out 250ms;
-  margin: -5px 0 0 10%;
+  margin: 0 0 0 10%;
 }
 .nav-links li a:hover::before{
   width: 80%;
@@ -376,111 +374,61 @@ nav{
   color: #BCBCBC;
 }
 .footer {
-  width: 100vw;
-margin-top: 300px;
-display: flex;
-align-items: center;
-background-color: #000000;
-justify-content: space-between;
-padding: 25px;
-}
-.landingpage .footer2 {
-  width: 100vw;
-display: flex;
-justify-content: space-between;
-padding-bottom: 30px;
-border-top: 1px solid #F2F2F2;
-}
-
-.footer-main {
-max-width: 40%;
-font-family: "Poppins";
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 40px;
-color: #FFFFFF;
-}
-.footer-navigate {
-display: flex;
-}
-.footer-navigate .nave {
-  margin-right: 80px;
-  background-color: #000000;
-}
-.footer-navigate .nave h5 {
-  margin: 0;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-.footer-navigate .nave p {
-  background-color: #000000;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.03em;
-  color: #D7D7D7;
-}
-.footer2 p {
-  background-color: #000000;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 36px;
-  color: #828282;
-  padding: 0 25px;
-}
-
-.footer2 p {
-background-color: #000000;
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 36px;
-color: #828282;
-}
-@media screen and (max-width: 36.25rem) {
  
-  .footer {
-    flex-direction: column;
-  }
-  .footer-main {
-    max-width: 80%;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  .footer-navigate .nave:first-child {
-    margin: 0;
-  }
-  .footer-main {
-    font-size: 15px;
-    line-height: 30px;
-    max-width: 100%;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .footer-navigate {
-    justify-content: space-between;
-    width: 100%;
-  }
-  .footer-navigate .nave {
-    margin-left: 20px;
-  }
-  .footer-navigate .nave h5 {
-    font-size: 15px;
-    line-height: 30px;
-  }
-  .footer-navigate .nave p {
-    font-size: 10px;
-    line-height: 18px;
-  }
-}
+  margin-top: 1000px;
+   display: flex;
+   align-items: center;
+   background-color: #000000;
+   justify-content: space-between;
+ }
+ .landingpage .footer2 {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 30px;
+   border-top: 1px solid #F2F2F2;
+ }
+   
+ .footer-main {
+   max-width: 40%;
+   font-family: "Poppins";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 40px;
+   color: #FFFFFF;
+ }
+ .footer-navigate {
+   display: flex;
+ }
+ .footer-navigate .nave {
+   margin-right: 80px;
+   background-color: #000000;
+ }
+ .footer-navigate .nave h5 {
+   margin: 0;
+   font-family: "Poppins";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   color: #FFFFFF;
+ }
+ .footer-navigate .nave p {
+   background-color: #000000;
+   font-family: "Poppins";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+   color: #D7D7D7;
+ }
+ .footer2 p {
+   background-color: #000000;
+   font-family: "Poppins";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 36px;
+   color: #828282;
+ }
