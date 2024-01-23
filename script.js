@@ -28,7 +28,7 @@
               window.location.href = "page2__1.html";
               break;
             case "mobile":
-              window.location.href = "#";
+              window.location.href = "page2__1 copy.html";
               break;
             case "data":
               window.location.href = "#";
