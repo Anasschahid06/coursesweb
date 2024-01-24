@@ -411,7 +411,7 @@ nav{
  }
  .footer-navigate .nave {
    margin-right: 80px;
-   background-color: #000000;
+  
  }
  .footer-navigate .nave h5 {
    margin: 0;
@@ -423,7 +423,7 @@ nav{
    color: #FFFFFF;
  }
  .footer-navigate .nave p {
-   background-color: #000000;
+   
    font-family: "Poppins";
    font-style: normal;
    font-weight: 400;
@@ -433,7 +433,7 @@ nav{
    color: #D7D7D7;
  }
  .footer2 p {
-   background-color: #000000;
+   
    font-family: "Poppins";
    font-style: normal;
    font-weight: 400;
