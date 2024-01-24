@@ -6,7 +6,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007BFF;
+  background-color: black;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -29,7 +29,8 @@ body{
 nav{
     height: 6rem;
     width: 100vw;
-    background-color: #1F1D2B;
+    background: rgb(17,18,19);
+    background: radial-gradient( rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
@@ -69,7 +70,7 @@ nav{
     color: #e4dede;
 }
 .nav-links li a:hover {
-    color: #61DAFB;
+    color: wheat;
 }
 .nav-links li {
     position: relative;
@@ -79,7 +80,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background-color: #61DAFB;
+    background: linear-gradient(93.51deg, #c9b4db 2.84%, #5a7aa5 99.18%);
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: -5px 0 0 10%;
@@ -160,7 +161,8 @@ nav{
     }
     .nav-links{
         position: fixed;
-        background: #131418;
+        background: rgb(17,18,19);
+        background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -473,7 +475,8 @@ label {
 margin-top: 300px;
 display: flex;
 align-items: center;
-background-color: #000000;
+background: rgb(17,18,19);
+background: radial-gradient( rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
 justify-content: space-between;
 padding: 25px;
 }

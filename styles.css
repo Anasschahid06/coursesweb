@@ -386,7 +386,8 @@ nav{
   margin-top: 1000px;
    display: flex;
    align-items: center;
-   background-color: #000000;
+   background: rgb(17,18,19);
+   background: radial-gradient( rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
    justify-content: space-between;
  }
  .landingpage .footer2 {
