@@ -18,24 +18,27 @@
     }
     window.addEventListener('scroll', scrollTop)
     
-    function navigateToCategory() {
-        var select = document.getElementById("categorySelect");
-      
-        if (select.value !== "default") {
-          // Redirect to the corresponding HTML file based on the selected category
-          switch (select.value) {
-            case "web":
-              window.location.href = "page2__1.html";
-              break;
-            case "mobile":
-              window.location.href = "page2__1 copy.html";
-              break;
-             case "cyber":
-                window.location.href = "https://t.me/+mn5gJWvRQJhkZTlk";
-                break;  
-          }
+        function navigateToCategory() {
+            var select = document.getElementById("categorySelect");
+
+            if (select.value !== "default") {
+                // Redirect or open link based on the selected category
+                switch (select.value) {
+                    case "web":
+                        window.location.href = "page2__1.html";
+                        break;
+                    case "mobile":
+                        window.location.href = "page2__1 copy.html";
+                        break;
+                    case "cyber":
+                        // Open Telegram link in a new tab
+                        window.open("https://t.me/+mn5gJWvRQJhkZTlk", "_blank");
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
-      }
       (function() {
         // get all data in form and return object
         function getFormData(form) {
