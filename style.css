@@ -6,7 +6,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007BFF;
+  background-color:black;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -43,6 +43,8 @@ nav{
     display: flex;
     position: fixed;
     z-index: 10;
+    background: rgb(17,18,19);
+    background: radial-gradient( rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
 }
 
 /*Styling logo*/
@@ -82,6 +84,8 @@ nav{
   display: block;
   height: 3px;
   width: 0%;
+  background: rgb(17,18,19);
+  background: radial-gradient(circle, rgba(17,18,19,1) 31%, rgb(163, 210, 221) 100%);
  background-color: #131418;
   position: absolute;
   transition: all ease-in-out 250ms;
@@ -110,7 +114,7 @@ nav{
     display: block;
     height: 3px;
     width: 0%;
-    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    background: linear-gradient(93.51deg, #c9b4db 2.84%, #5a7aa5 99.18%);
     position: absolute;
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
@@ -153,7 +157,8 @@ nav{
     }
     .nav-links{
         position: fixed;
-        background: #131418;
+        background: rgb(17,18,19);
+        background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -215,7 +220,8 @@ nav{
   
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #1F1D2B;
+    background: rgb(17,18,19);
+background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
   }
   .landingpage::before {
     content: "";
@@ -225,7 +231,7 @@ nav{
     left: 60%;
     top: 138px;
     filter: blur(90px);
-    background-color: #FB37FF;
+    background-color: #070707;
   }
   .landingpage::after {
     content: "";
@@ -234,7 +240,7 @@ nav{
     height: 123px;
     left: 80%;
     top: 550px;
-    background-color: #18B2DE;
+  
     filter: blur(80px);
   }
   .box {
@@ -844,15 +850,4 @@ nav{
   }
  
   
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-}
+
