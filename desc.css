@@ -502,7 +502,7 @@ display: flex;
 }
 .footer-navigate .nave {
   margin-right: 80px;
-  background-color: #000000;
+ 
 }
 .footer-navigate .nave h5 {
   margin: 0;
@@ -514,7 +514,8 @@ display: flex;
   color: #FFFFFF;
 }
 .footer-navigate .nave p {
-  background-color: #000000;
+  
+  
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -524,7 +525,9 @@ display: flex;
   color: #D7D7D7;
 }
 .footer2 p {
-  background-color: #000000;
+ 
+  background: rgb(17,18,19);
+  background: radial-gradient( rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -535,7 +538,7 @@ display: flex;
 }
 
 .footer2 p {
-background-color: #000000;
+
 font-family: "Poppins";
 font-style: normal;
 font-weight: 400;
