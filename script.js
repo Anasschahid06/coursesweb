@@ -30,11 +30,8 @@
             case "mobile":
               window.location.href = "page2__1 copy.html";
               break;
-            case "data":
-              window.location.href = "#";
-              break;
-              case "cyber":
-                window.location.href = "#";
+             case "cyber":
+                window.location.href = "https://t.me/+mn5gJWvRQJhkZTlk";
                 break;  
           }
         }
