@@ -458,18 +458,7 @@ label {
   transform: scale(0, 1);
   transition-delay: 0.3s;
 }
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
+
 .footer {
   width: 100vw;
 margin-top: 300px;
