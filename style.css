@@ -49,12 +49,12 @@ nav{
 
 /*Styling logo*/
 .logo{
-    padding:1vh 1vw;
-    text-align: center;
+  padding:0,5vh 1vw;
+  text-align: center;
 }
 .logo img {
-    height: 5rem;
-    width: 5rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 /*Styling Links*/
