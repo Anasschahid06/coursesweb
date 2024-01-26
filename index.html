@@ -32,11 +32,7 @@
             <li><a href="form.html">contact us</a></li>
            
         </ul>
-        <div class="loader-container" id="loader">
-          <p style="color: #bdbdbd;">Welcome to our site! Please watch the video to know how to use the site and get the courses 
-
-            أهلا في موقعنا! يرجى مشاهدة الفيديو لكي تعرف كيف تستعمل الموقع و تحصل على الكورسات
-          </p><div class="loader"></div>
+        <div class="loader-container" id="loader"><div class="loader"></div>
       </div>
     </nav>
     <br>
@@ -259,9 +255,12 @@
 </html>
 <script src="script.js"></script>
 <script>
-            window.onload = function() {
-            alert("Welcome to our site! Please watch the video to know how to use the site and get the courses  ");
-        };
+window.addEventListener('load', function() {
+    var loadingScreen = document.querySelector('.loading-screen');
+    loadingScreen.classList.add('loaded');
+    alert('أهلا في موقعنا! يرجى مشاهدة الفيديو لكي تعرف كيف تستعمل الموقع و تحصل على الكورسات');
+    alert('Welcome to our site! Please watch the video to know how to use the site and get the courses')
+});
   // Get the button
   var mybutton = document.getElementById("scrollToTopBtn");
 
@@ -284,12 +283,7 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
   // Wait for the window to load
-window.onload = function() {
-    // Hide the loading screen
-    document.getElementById('loader').style.display = 'none';
-    // Show the content
-    document.getElementById('content').style.display = 'block';
-};
+
 
 </script>
 <!-- partial -->
