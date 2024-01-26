@@ -849,7 +849,6 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
     }
   }
  
-  
   #loader {
     position: fixed;
     top: 0;
@@ -887,8 +886,3 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
   }
   
   
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
