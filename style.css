@@ -850,7 +850,7 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
   }
  
   
-  loader {
+  #loader {
     position: fixed;
     top: 0;
     left: 0;
