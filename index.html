@@ -255,11 +255,20 @@
 </html>
 <script src="script.js"></script>
 <script>
-window.addEventListener('load', function() {
-    var loadingScreen = document.querySelector('.loading-screen');
-    loadingScreen.classList.add('loaded');
-    alert('أهلا في موقعنا! يرجى مشاهدة الفيديو لكي تعرف كيف تستعمل الموقع و تحصل على الكورسات');
-    alert('Welcome to our site! Please watch the video to know how to use the site and get the courses')
+// window.addEventListener('load', function() {
+//     var loadingScreen = document.querySelector('.loading-screen');
+//     loadingScreen.classList.add('loaded');
+//     alert('أهلا في موقعنا! يرجى مشاهدة الفيديو لكي تعرف كيف تستعمل الموقع و تحصل على الكورسات');
+//     alert('Welcome to our site! Please watch the video to know how to use the site and get the courses')
+// });
+document.addEventListener("DOMContentLoaded", function() {
+    var loader = document.getElementById("loader");
+
+    // Simulate a loading time of 5 seconds
+    setTimeout(function() {
+        loader.style.display = "none"; // Hide the loading screen
+        alert("Loading Finished!"); // Show an alert after loading is finished
+    }, 5000);
 });
   // Get the button
   var mybutton = document.getElementById("scrollToTopBtn");
