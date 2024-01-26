@@ -869,7 +869,7 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 30s linear infinite;
+    animation: spin 20s linear infinite;
   }  
  
   
