@@ -32,8 +32,7 @@
             <li><a href="form.html">contact us</a></li>
            
         </ul>
-        <div class="loader-container" id="loader"><div class="loader"></div>
-      </div>
+        <div id="loader"><div class="loader"></div></div>
     </nav>
     <br>
     <br>
@@ -262,16 +261,25 @@
         // window.onload = function() {
         //     alert("Welcome to our site! Please watch the video to know how to use the site and take the courses");
         // };
-document.addEventListener("DOMContentLoaded", function() {
-    var loader = document.getElementById("loader");
 
-    // Simulate a loading time of 5 seconds
-    setTimeout(function() {
-        loader.style.display = "none"; // Hide the loading screen
-        alert("Welcome to our site! Please watch the video to know how to use the site and get the courses");
-        alert("أهلا في موقعنا! يرجى مشاهدة الفيديو لكي تعرف كيف تستعمل الموقع و تحصل على الكورسات");
- // Show an alert after loading is finished
-    }, 1000);
+        document.addEventListener("DOMContentLoaded", function() {
+    var loader = document.getElementById("loader");
+    var loadingFinished = sessionStorage.getItem("loadingFinished");
+
+    // If loading has not been finished yet in this session, show loader
+    if (!loadingFinished) {
+        // Show loader after 0.5 seconds
+        setTimeout(function() {
+            loader.classList.add("show");
+
+            // Hide loader and show alert after 5 seconds
+            setTimeout(function() {
+                loader.classList.remove("show");
+                alert("Welcome to our site! Please watch the video to know how to use the site and get the courses");
+                sessionStorage.setItem("loadingFinished", true); // Store flag in session storage
+            }, 2000);
+        }, 500);
+    }
 });
   // Get the button
   var mybutton = document.getElementById("scrollToTopBtn");

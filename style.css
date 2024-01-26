@@ -850,28 +850,43 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
   }
  
   
-
-  .loader-container {
+  loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #131418;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #080808;
+    z-index: 9999;
+    display: none;
+    
   }
-  
   .loader {
     border: 8px solid #f3f3f3; /* Light grey */
     border-top: 8px solid #3498db; /* Blue */
     border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     width: 50px;
     height: 50px;
     animation: spin 15s linear infinite;
-  }  
- 
+  } 
+  #loader.show {
+    display: block;
+  }
+  
+  
+  .loader-content {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
