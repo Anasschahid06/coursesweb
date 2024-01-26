@@ -871,9 +871,7 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
     height: 50px;
     animation: spin 15s linear infinite;
   }  
-  .loader p{
-    position: fixed;
-  }
+ 
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
