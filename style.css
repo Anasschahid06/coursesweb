@@ -880,7 +880,7 @@ background: radial-gradient(circle, rgb(33, 50, 66) 31%, rgb(15, 1, 1) 100%);
     color: white;
     font-size: 24px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
